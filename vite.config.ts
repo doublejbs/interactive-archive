@@ -11,6 +11,7 @@ export default defineConfig({
         rain: '/projects/rain/index.html',
         interstellar: '/projects/interstellar/index.html',
         avatarToruk: '/projects/avatar-toruk/index.html',
+        dodgePoop: '/projects/dodge-poop/index.html',
       },
     },
   },
