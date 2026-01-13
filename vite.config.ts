@@ -8,6 +8,7 @@ export default defineConfig({
         particle: '/projects/particle/index.html',
         avatarNetwork: '/projects/avatar-network/index.html',
         robot: '/projects/robot/index.html',
+        rain: '/projects/rain/index.html',
       },
     },
   },

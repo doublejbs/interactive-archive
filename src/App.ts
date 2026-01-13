@@ -1,4 +1,3 @@
-import * as THREE from 'three';
 import SceneManager from './core/SceneManager';
 import InteractionManager from './core/InteractionManager';
 
