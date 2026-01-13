@@ -147,11 +147,27 @@ class VideoPuzzleApp {
 
         this.updateTilePosition(this.canvases[tile1.originalIndex], idx1);
         this.updateTilePosition(this.canvases[tile2.originalIndex], idx2);
+
+        if (!this.isShuffling) {
+            this.checkSolved();
+        }
+    }
+
+    private checkSolved(): void {
+        const isSolved = this.tiles.every((t, i) => t.originalIndex === i);
+        const msg = document.getElementById('success-message');
+        if (msg) {
+            msg.style.display = isSolved ? 'block' : 'none';
+        }
     }
 
     public async shuffle(): Promise<void> {
         if (this.isShuffling) return;
         this.isShuffling = true;
+
+        // Hide success message
+        const msg = document.getElementById('success-message');
+        if (msg) msg.style.display = 'none';
 
         // Deselect if any
         if (this.selectedIndex !== null) {
@@ -194,6 +210,8 @@ class VideoPuzzleApp {
             const tile = this.tiles[i];
             this.updateTilePosition(this.canvases[tile.originalIndex], i);
         }
+
+        this.checkSolved();
     }
 
     private startRenderLoop(): void {
