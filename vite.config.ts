@@ -9,6 +9,7 @@ export default defineConfig({
         avatarNetwork: '/projects/avatar-network/index.html',
         robot: '/projects/robot/index.html',
         rain: '/projects/rain/index.html',
+        interstellar: '/projects/interstellar/index.html',
       },
     },
   },
