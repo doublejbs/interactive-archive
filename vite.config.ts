@@ -12,6 +12,7 @@ export default defineConfig({
         interstellar: '/projects/interstellar/index.html',
         avatarToruk: '/projects/avatar-toruk/index.html',
         dodgePoop: '/projects/dodge-poop/index.html',
+        videoPuzzle: '/projects/video-puzzle/index.html',
       },
     },
   },
