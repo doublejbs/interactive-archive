@@ -10,6 +10,7 @@ export default defineConfig({
         robot: '/projects/robot/index.html',
         rain: '/projects/rain/index.html',
         interstellar: '/projects/interstellar/index.html',
+        avatarToruk: '/projects/avatar-toruk/index.html',
       },
     },
   },
